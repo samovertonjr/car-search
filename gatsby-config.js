@@ -26,5 +26,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+
+    {
+      resolve: ` gatsby-plugin-netlify-headers`,
+      options: {
+        headers: {
+          '/*': ['Access-Control-Allow-Origin'],
+        },
+      },
+    },
   ],
 }
