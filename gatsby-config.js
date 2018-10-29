@@ -30,7 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
-        mergeSecurityHeaders: false,
+        headers: {
+          '/*': ['Access-Control-Allow-Origin: *'],
+        },
       },
     },
   ],
