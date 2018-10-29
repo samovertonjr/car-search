@@ -28,10 +28,10 @@ module.exports = {
     'gatsby-plugin-offline',
 
     {
-      resolve: ` gatsby-plugin-netlify-headers`,
+      resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          '/*': ['Access-Control-Allow-Origin'],
+          '*': ['Access-Control-Allow-Origin'],
         },
       },
     },
