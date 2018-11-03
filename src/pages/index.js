@@ -1,5 +1,5 @@
 import React from 'react'
-import { search, detail } from 'craigslist-searcher'
+import { search, detail } from '../api'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
