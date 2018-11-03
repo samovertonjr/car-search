@@ -57,7 +57,7 @@ const detail = url =>
   new Promise((resolve, reject) => {
     if (!url) reject(new Error('url is a required parameter.'))
     axios
-      .get(url)
+      .get(`https://cors-anywhere.herokuapp.com/${url}`)
       .then(({ data }) => {
         const imagesArray = []
         const formatedData = data.replace(/\n/g, '')
